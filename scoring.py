@@ -180,5 +180,7 @@ output['scoring_time'] = res
 ##show the data
 pd.set_option('display.max_columns', None)
 print(output.head())
+#write to csv
+output.to_csv('output.csv')stat
 # Write this into a database
 
