@@ -5,7 +5,7 @@ import datetime
 from helper import *
 
 ## read sample data
-df = pd.read_csv("risk_scoring_mock_data_guyo.csv")
+df = pd.read_csv("data/risk_scoring_mock_data_guyo.csv")
 
 """
 Write the data into the database
@@ -181,6 +181,6 @@ output['scoring_time'] = res
 pd.set_option('display.max_columns', None)
 print(output.head())
 #write to csv
-output.to_csv('output.csv')
+output.to_csv('data/output.csv')
 # Write this into a database
 
